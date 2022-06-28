@@ -6,6 +6,10 @@ app.use(express.json());
 
 const client = new jikan.Client()
 
+app.get('/', (req, res)=>{
+    res.send('Hellow World')
+})
+
 app.get('/anime', async (req, res) => {
     let {id} = req.body
     const anime = await client.anime.get(id)
