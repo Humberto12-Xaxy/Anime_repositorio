@@ -7,7 +7,7 @@ app.use(express.json());
 const client = new jikan.Client()
 
 app.get('/', (req, res)=>{
-    res.send('Hello world')
+    res.send('Hello edgar')
 })
 
 app.get('/anime', async (req, res) => {
